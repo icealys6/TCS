@@ -8,11 +8,22 @@ import { MriComponent } from './mri/mri.component';
 import { AboutComponent } from './about/about.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LayoutComponent } from './layout/layout.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, HomeComponent, TransactionsComponent, MriComponent, AboutComponent, ContactUsComponent],
+  declarations: [
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    TransactionsComponent,
+    MriComponent,
+    AboutComponent,
+    ContactUsComponent,
+    LayoutComponent
+],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ],
   exports: [LayoutComponent]
 })
